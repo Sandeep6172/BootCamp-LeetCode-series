@@ -8,7 +8,7 @@ class Solution {
 
         int[] indegree = new int[numCourses];
 
-        // Build graph
+       
         for (int[] pair : prerequisites) {
             int course = pair[0];
             int prerequisite = pair[1];
@@ -17,7 +17,6 @@ class Solution {
             indegree[course]++;
         }
 
-        // Courses with no prerequisites
         Queue<Integer> queue = new LinkedList<>();
 
         for (int i = 0; i < numCourses; i++) {
@@ -28,7 +27,7 @@ class Solution {
 
         int count = 0;
 
-        // Topological Sort
+
         while (!queue.isEmpty()) {
             int current = queue.poll();
             count++;
