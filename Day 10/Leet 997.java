@@ -3,8 +3,8 @@ class Solution {
          int[] count = new int[n + 1];
 
         for (int[] t : trust) {
-            count[t[0]]--;  // trusts someone
-            count[t[1]]++;  // trusted by someone
+            count[t[0]]--;  
+            count[t[1]]++;  
         }
 
         for (int i = 1; i <= n; i++) {
