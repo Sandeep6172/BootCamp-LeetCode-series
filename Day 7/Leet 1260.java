@@ -5,7 +5,7 @@ class Solution {
 
         List<List<Integer>> ans = new ArrayList<>();
 
-        // Create empty rows
+    
         for (int i = 0; i < m; i++) {
             ans.add(new ArrayList<>());
             for (int j = 0; j < n; j++) {
@@ -13,7 +13,7 @@ class Solution {
             }
         }
 
-        // Move every element to its new position
+        
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
 
